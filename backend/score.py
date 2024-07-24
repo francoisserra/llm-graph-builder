@@ -452,7 +452,7 @@ async def update_extract_status(request:Request, file_name, url, userName, passw
             graph = create_graph_database_connection(uri, userName, decoded_password, database)
             graphDb_data_Access = graphDBdataAccess(graph)
             result = graphDb_data_Access.get_current_status_document_node(file_name)
-            if result is not None:
+            if result is not None and len(result) > 0:
                 status = json.dumps({'fileName':file_name, 
                 'status':result[0]['Status'],
                 'processingTime':result[0]['processingTime'],
