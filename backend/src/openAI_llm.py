@@ -15,8 +15,12 @@ def get_graph_from_OpenAI(model_version, graph, chunkId_chunkDoc_list, allowedNo
     graph_document_list=[]
         
     combined_chunk_document_list = get_combined_chunks(chunkId_chunkDoc_list)
-    
-    llm,model_name = get_llm(model_version)  
+    print('start getting llm')
+    print('model_version')
+    print(model_version)
+    llm,model_name = get_llm(model_version)
+    print('llm got')
+    print(llm)
     return  get_graph_document_list(llm, combined_chunk_document_list, allowedNodes, allowedRelationship)
            
         

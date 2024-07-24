@@ -1,4 +1,27 @@
-[{
+[
+  {
+  "labels": [
+    "Style",
+    "NatureOfProduct",
+    "Color",
+    "Material",
+    "NatureOfService",
+    "NatureOfEditorial",
+    "HomeSpace"
+  ],
+  "relationshipTypes": [
+    "isAccessoryFor",
+    "isComplementaryProductFor",
+    "isConsumableFor",
+    "isFor",
+    "isNeededForInstallationOf",
+    "isPartOf",
+    "isSparePartFor",
+    "subClassOf"
+  ],
+  "schema": "Adeo"
+},
+  {
   "labels": [
     "Answer",
     "Question",
